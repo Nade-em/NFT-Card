@@ -28,6 +28,37 @@
      border-radius: 5px;
  }
 
+ .overlay {
+     position: absolute;
+     top: 6rem;
+     bottom: 0;
+     left: 34.6rem;
+     right: 0rem;
+     height: 39%;
+     width: 16em;
+     opacity: 0;
+     background-color: hsl(178, 100%, 50%);
+     border-radius: 10px;
+ }
+
+ .view {
+     position: absolute;
+     top: 37%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+     text-align: center;
+     display: none;
+ }
+
+ .image-container:hover .overlay {
+     opacity: 0.5;
+     cursor: pointer;
+ }
+
+ .image-container:hover .overlay+.view {
+     display: block;
+ }
+
  .container>h2 {
      margin: 1.1rem 0;
      font-weight: 600;
