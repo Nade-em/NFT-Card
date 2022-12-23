@@ -1,0 +1,161 @@
+ @import url('https://fonts.googleapis.com/css2?family=Outfit&family=Poppins&family=Roboto&display=swap');
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     color: hsl(0, 0%, 100%);
+     font-family: 'Outfit', sans-serif;
+     font-size: 18px;
+     overflow: hidden;
+ }
+
+ body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     padding: 1rem;
+     background-color: hsl(217, 54%, 11%);
+
+ }
+
+ .container {
+     padding: 1rem;
+     margin-top: 10vh;
+     width: 25%;
+     height: 50%;
+     background-color: hsl(216, 50%, 16%);
+     border-radius: 5px;
+ }
+
+ .container>h2 {
+     margin: 1.1rem 0;
+     font-weight: 600;
+     letter-spacing: 2px;
+ }
+
+ .description {
+     margin: 1em 0;
+ }
+
+
+
+ .main-img {
+
+     border-radius: 8px;
+     display: block;
+     margin: auto;
+     max-width: 16em;
+     height: 50%;
+ }
+
+ .price {
+     display: flex;
+     justify-content: space-between;
+ }
+
+ .eth,
+ .eth-time,
+ .user-pro {
+     display: flex;
+
+ }
+
+ hr {
+     display: block;
+     height: 1px;
+     border: 0;
+     border-top: 1px solid hsl(215, 32%, 27%);
+     margin: 1em 0.3em;
+     padding: 0;
+ }
+
+
+ .eth-time>img {
+     margin-top: 3px;
+     max-width: 1.2rem;
+     max-height: 1rem;
+ }
+
+ .price>.eth-time>p {
+     font-size: 14px;
+     margin: 2;
+ }
+
+
+
+ .price>.eth>h3 {
+     font-size: 14px;
+     margin: 2px;
+     color: hsl(178, 100%, 50%);
+ }
+
+ p {
+     margin: 2px;
+     color: hsl(215, 51%, 70%);
+ }
+
+ .user-pro>p {
+     margin-left: 1.2rem;
+     color: hsl(215, 51%, 70%);
+     font-size: 14px;
+
+ }
+
+ .user-pro>p>span {
+     color: #fff;
+     font-weight: 400;
+ }
+
+ .user-pro>img {
+     border: 1px solid #fff;
+     border-radius: 50%;
+     max-width: 10%;
+     max-height: 20%;
+ }
+
+ .container>h2:hover,
+ .user-pro>p>span:hover {
+     color: hsl(178, 100%, 50%);
+     cursor: pointer;
+ }
+
+ @media (max-width:1309px) {
+     .container {
+         overflow: hidden;
+         padding: 2rem;
+         margin-top: 10vh;
+         width: auto;
+         height: auto;
+         background-color: hsl(216, 50%, 16%);
+         border-radius: 3px;
+     }
+
+     .main-img {
+         border-radius: 8px;
+         display: block;
+         margin: auto;
+         max-width: 12em;
+         max-height: 25%;
+     }
+ }
+
+ @media (max-width:390px) {
+
+
+     .main-img {
+         border-radius: 8px;
+         display: block;
+         margin: auto;
+         max-width: 8em;
+         max-height: 25%;
+     }
+
+     .user-pro>img {
+         border: 1px solid #fff;
+         border-radius: 50%;
+         max-width: auto;
+         max-height: 2%;
+     }
+
+ }
